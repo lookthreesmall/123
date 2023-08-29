@@ -1,55 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 
 <head>
+  <script src="../assets/js/color-modes.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.115.4">
+  <title>Carousel Template · Bootstrap v5.3</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    #me-nav {
-      width: 366px;
+    img {
+      height: 500px;
+      background-size: cover;
     }
 
-    #me-context {
-      width: 960px;
-      height: 576px;
-    }
-
-    @media (max-width: 1400px) {
-      #me-context {
-        width: 800px;
-      }
-    }
-
-    @media (max-width: 992px) {
-      #me-context {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      #me-nav {
-        width: 100%;
-        height: 100px;
-      }
+    .card img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%
     }
   </style>
-</head>
 
-<body class="">
-  <div class="w-100 p-0 vh-100 d-flex flex-column flex-xl-row">
-    <div id="me-nav" class="bg-primary-subtle flex-shrink-0 "></div>
-    <div id="me-concant" class="flex-grow-1 bg-secondary d-flex justify-content-center align-items-center">
-      <div id="me-context" class="d-flex flex-wrap bg-secondary p-sm-5 p-lg-0">
-        <div class="col-12 col-lg-12 col-xl-12 col-xxl-4 border bg-danger">A</div>
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-4 border bg-warning">B</div>
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-4 border bg-info">C<a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>0.
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+  <div class="container-fluid text-primary-emphasis">
+    <a class="navbar-brand " href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="width: 100rem; ">
+      <div class="carousel-item active">
+        <img
+          src="https://png.pngtree.com/png-vector/20210225/ourmid/pngtree-bread-superman-picture-png-image_2952505.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
-
+      <div class="carousel-item">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMjU2MTgxMDgtZjE5ZS00ZjAwLThkNWYtNzk5YTc1N2U4NTJlXkEyXkFqcGdeQXVyMjYxMzY2NDk@._V1_.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://repository-images.githubusercontent.com/200464086/60a4fa00-41db-11eb-90c2-e18f174d8468"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="3-card d-flex row justify-content-center  ">
+    <div class="card" style="width: 18rem;margin:0px 25px; ">
+      <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/cd41a3529a54f222ea5b5af0eb8c8902.png"
+        class="card-img-left " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; margin:0px 25px;">
+      <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/49d74baa242905f137124ed47468d8e7.png"
+        class="card-img-mid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;margin:0px 25px;">
+      <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/ca2c0b8e697cd9e95e8c5f28bd19d05f.png" class="card-img-right
+      " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
+</html>
